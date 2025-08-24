@@ -17,6 +17,7 @@ export const projectsData = [
     longDescription:
       "Цей проєкт був створений для відпрацювання навичок роботи з React, Next.js та асинхронними запитами. Основна мета — реалізувати динамічний пошук, фільтрацію та пагінацію персонажів, а також відобразити детальну інформацію про кожного з них.",
     detailedImages: [
+      "/images/projects/rickandmorty-desk-1.webp",
       "/images/projects/rickandmorty-tablet-1.webp",
       "/images/projects/rickandmorty-mobile-1.webp",
       "/images/projects/rickandmorty-desk-2.webp",
