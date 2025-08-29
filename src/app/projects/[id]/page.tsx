@@ -1,8 +1,9 @@
 // src/app/projects/[id]/page.tsx
 
-import Image from "next/image";
 import { projectsData } from "@/data/projectsData";
 import Layout from "@/components/Layout";
+import SwiperCarousel from "@/components/SwiperCarousel";
+import React from "react";
 
 // Ця функція генерує динамічні шляхи для статичної генерації
 export async function generateStaticParams() {
@@ -17,26 +18,35 @@ export default async function ProjectDetails({
 }: {
   params: { id: string };
 }) {
-  const project = projectsData.find((p) => p.id === params.id);
+  const awaitedParams = await params;
+  const project = projectsData.find((p) => p.id === awaitedParams.id);
 
   if (!project) {
     return (
       <Layout>
         <div className="container mx-auto p-8 text-white text-center">
-          <h1 className="text-3xl font-bold">Проєкт не знайдено</h1>
-          <p className="mt-4">
-            Перейдіть на сторінку проєктів, щоб переглянути інші роботи.
-          </p>
+          <h1 className="text-3xl font-bold">Project not found</h1>
+          <p className="mt-4">Go to the projects page to see other works.</p>
         </div>
       </Layout>
     );
   }
 
+  // const lines = project.longDescription.split("\n");
+
   return (
     <Layout>
       <div className="container mx-auto p-8 text-white">
         <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-        <div className="flex flex-wrap gap-2 mb-8">
+
+        {project.detailedImages && project.detailedImages.length > 0 && (
+          <SwiperCarousel
+            images={project.detailedImages}
+            projectTitle={project.title}
+          />
+        )}
+
+        <div className="flex flex-wrap gap-2 mb-8 mt-8">
           {project.technologies.map((tech) => (
             <span
               key={tech}
@@ -64,23 +74,20 @@ export default async function ProjectDetails({
             Демо
           </a>
         </div>
-        <p className="text-lg mb-8 text-slate-300">{project.longDescription}</p>
 
-        {project.detailedImages && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {project.detailedImages.map((image, index) => (
-              <div key={index} className="rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src={image}
-                  alt={`Скріншот проєкту ${project.title} ${index + 1}`}
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        )}
+        <p
+          className="text-lg mb-8 text-slate-300"
+          style={{ whiteSpace: "pre-wrap" }}
+        >
+          {project.longDescription}
+        </p>
+
+        {/* {project.detailedImages && project.detailedImages.length > 0 && (
+          <SwiperCarousel
+            images={project.detailedImages}
+            projectTitle={project.title}
+          />
+        )} */}
       </div>
     </Layout>
   );
