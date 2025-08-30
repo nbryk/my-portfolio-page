@@ -26,7 +26,7 @@ export default function Contacts() {
   return (
     <Layout>
       <div className="container mx-auto px-6 py-12 text-white">
-        <h1 className="text-4xl font-bold mb-8">Contacts</h1>
+        <h1 className="text-4xl font-bold mb-8 text-teal-500">Contacts</h1>
         <p className="text-lg mb-6 text-slate-300">
           You can contact me in any convenient way 👇
         </p>

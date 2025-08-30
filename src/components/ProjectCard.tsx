@@ -32,8 +32,10 @@ export default function ProjectCard({
         className="w-full h-auto object-cover"
       />
       <div className="p-6">
-        <h3 className="text-2xl font-bold mb-2 text-gray-900">{title}</h3>
-        <p className="text-gray-500 mb-4">{shortDescription}</p>
+        <h3 className="text-2xl font-bold mb-2 text-teal-500 drop-shadow-[2px_2px_2px_black]">
+          {title}
+        </h3>
+        <p className="text-gray-300 mb-4">{shortDescription}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech) => (
             <span
