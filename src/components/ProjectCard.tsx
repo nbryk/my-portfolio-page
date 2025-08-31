@@ -24,13 +24,15 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="bg-slate-700 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
-      <Image
-        src={image}
-        alt={title}
-        width={300}
-        height={200}
-        className="w-full h-auto object-cover"
-      />
+      <div className="relative w-full h-48 overflow-hidden">
+        <Image
+          src={image}
+          alt={title}
+          layout="fill"
+          objectFit="cover"
+          className="transition-transform duration-300 hover:scale-110"
+        />
+      </div>
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-2 text-teal-500 drop-shadow-[2px_2px_2px_black]">
           {title}

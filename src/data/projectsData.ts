@@ -103,4 +103,28 @@ export const projectsData = [
       "/images/projects/bang-olufsen/bang-olufsen-desk-3.webp",
     ],
   },
+  {
+    id: "interactive-user-table",
+    title: "Interactive User Table",
+    shortDescription: " Interactive User Table: Sort & Filter",
+    image: "/images/projects/interactive-user-table/user-table-desk-1.webp",
+    technologies: ["Rect", "TypeScript", "RESTfull API", "SCSS Sass"],
+    githubLink: "https://github.com/nbryk/interactive-user-table",
+    demoLink: "https://nbryk.github.io/interactive-user-table/",
+    longDescription: `
+    Implemented URL search parameters to persist all applied
+ filters and sorting options, ensuring shareable and savable
+ views.
+ Developed a Century Filter, allowing users to select multiple
+ or all centuries.
+ Enabled table sorting by name, gender, birth year, and death
+ year via clickable TH arrows.`,
+    detailedImages: [
+      "/images/projects/interactive-user-table/user-table-desk-1.webp",
+      "/images/projects/interactive-user-table/user-table-tablet-mobile-1.webp",
+      "/images/projects/interactive-user-table/user-table-desk-2.webp",
+      "/images/projects/interactive-user-table/user-table-desk-3.webp",
+      "/images/projects/interactive-user-table/user-table-desk-4.webp",
+    ],
+  },
 ];
