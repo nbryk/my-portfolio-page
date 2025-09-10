@@ -41,17 +41,19 @@ export const projectsData = [
     githubLink: "https://github.com/fs-apr25-girlpower/nice-gadgets-frontend",
     demoLink: "https://fs-apr25-girlpower.github.io/nice-gadgets-frontend/#/",
     longDescription: `
-      This project is a fully functional e-commerce application built to demonstrate core front-end development skills in a team environment.
+    This project is a fully functional e-commerce application built to demonstrate core front-end development skills in a team environment.
       
-      Key features include:
-        - Dynamic Product Catalog: Users can browse products across three categories with advanced filtering and sorting.
-        - Interactive UI/UX: The interface features custom product sliders and unique, user-friendly empty states for the shopping cart and favorites page.
-        - State Management: The shopping cart and favorites list persist locally, allowing users to return to their selections after closing the browser.
-        - Unique Features: The application includes a distinctive, draggable UnicornAssistant for an engaging user experience.
-        - Responsive Design: A mobile-first approach ensures a seamless experience on all devices.
+    Key features include:
+      - Dynamic Product Catalog: Users can browse products across three categories with advanced filtering and sorting.
+      - Interactive UI/UX: The interface features custom product sliders and unique, user-friendly empty states for the shopping cart and favorites page.
+      - State Management: The shopping cart and favorites list persist locally, allowing users to return to their selections after closing the browser.
+      - Unique Features: The application includes a distinctive, draggable UnicornAssistant for an engaging user experience.
+      - Responsive Design: A mobile-first approach ensures a seamless experience on all devices.
 
-      Technical Stack & Implementation:
-          The project features a complete API layer with dedicated functions and async data fetching with loading states. For robust routing and navigation, it uses React Router DOM for dynamic routes, protected navigation with breadcrumbs, and custom 404 error handling. Code quality is maintained through TypeScript strict mode and a pre-commit hook setup with Husky, ESLint, and Prettier.`,
+    Technical Stack & Implementation:
+      - The project features a complete API layer with dedicated functions and async data fetching with loading states.
+      - For robust routing and navigation, it uses React Router DOM for dynamic routes, protected navigation with breadcrumbs, and custom 404 error handling.
+      - Code quality is maintained through TypeScript strict mode and a pre-commit hook setup with Husky, ESLint, and Prettier.`,
     detailedImages: [
       "/images/projects/ng/ng-store-all-1.webp",
       "/images/projects/ng/ng-store-desk-1.webp",
@@ -72,8 +74,11 @@ export const projectsData = [
     demoLink: "https://nbryk.github.io/todo-app/",
     longDescription: `
     This is a classic task management application focused on implementing core CRUD (Create, Read, Update, Delete) functionality.
+
     The application supports a range of features for efficient task handling, including adding, deleting, and updating tasks.
+
     Users can edit task titles with a double-click, toggle individual task status, and perform bulk actions via a "Toggle All" button.
+
     The app also features keyboard shortcuts for saving and canceling edits, providing a seamless user experience.`,
     detailedImages: [
       "/images/projects/todo/todo-desk-1.webp",
@@ -93,7 +98,9 @@ export const projectsData = [
     demoLink: "https://nbryk.github.io/bang_and_olufsen_landing_page/",
     longDescription: `
     This single-page landing site was built from a Figma design mockup, with a focus on achieving pixel-perfect implementation.
+
     I developed a fully responsive layout that provides a seamless user experience on all devices - from desktop to mobile.
+
     The page also features smooth CSS animations to enhance visual appeal and user interaction.`,
     detailedImages: [
       "/images/projects/bang-olufsen/bang-olufsen-desk-mobile-1.webp",
@@ -112,13 +119,11 @@ export const projectsData = [
     githubLink: "https://github.com/nbryk/interactive-user-table",
     demoLink: "https://nbryk.github.io/interactive-user-table/",
     longDescription: `
-    Implemented URL search parameters to persist all applied
- filters and sorting options, ensuring shareable and savable
- views.
- Developed a Century Filter, allowing users to select multiple
- or all centuries.
- Enabled table sorting by name, gender, birth year, and death
- year via clickable TH arrows.`,
+    Implemented URL search parameters to persist all applied filters and sorting options, ensuring shareable and savable views.
+
+    Developed a Century Filter, allowing users to select multiple or all centuries.
+
+    Enabled table sorting by name, gender, birth year, and death year via clickable TH arrows.`,
     detailedImages: [
       "/images/projects/interactive-user-table/user-table-desk-1.webp",
       "/images/projects/interactive-user-table/user-table-tablet-mobile-1.webp",
